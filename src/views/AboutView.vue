@@ -62,7 +62,7 @@ const fetchData = async () => {
   loading.value = true
   try {
     // แก้ไข URL ให้ตรงกับ Webhook ของคุณ
-    const response = await fetch('http://localhost:5678/webhook/data')
+    const response = await fetch('http://localhost:5678/webhook/data1')
     const data = await response.json()
     users.value = data
   } catch (error) {
